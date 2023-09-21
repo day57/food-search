@@ -1,7 +1,8 @@
 import axios from 'axios';
+import { YELP_KEY } from '@env';
 
 
-const API_KEY = process.env.YELP_KEY
+const API_KEY = YELP_KEY
 
 export default axios.create({
     // where we make the root of the request 

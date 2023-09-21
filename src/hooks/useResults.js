@@ -17,6 +17,9 @@ export default () => {
       });
       setResults(response.data.businesses);
     } catch (err) {
+      console.log(err.response.data);    // Response data
+      console.log(err.response.status);  // HTTP status code
+      console.log(err.response.headers); // HTTP headers
       setErrorMessage('Something went wrong');
     }
   };
